@@ -2,7 +2,7 @@ const hre = require("hardhat");
 
 async function main() {
   // Get the deployed contract address - replace with your actual deployed address
-  const NFT_CONTRACT_ADDRESS = "0x3F0998E39C69C51013e48e760cB6B672bd421b2a";
+  const NFT_CONTRACT_ADDRESS = "0xf037dddC941afB5705eaA367b6ccC741CA4379e6";
   
   console.log("Preparing to mint NFT...");
 

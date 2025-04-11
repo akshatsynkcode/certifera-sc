@@ -51,13 +51,14 @@ contract NFT is ERC721URIStorage, Ownable {
     
     /**
      * @dev Mints a new NFT with the specified metadata
+     * Anyone can call this function now (removed onlyOwner modifier)
      */
     function mintNFT(
         address recipient,
         NFTMetadataBasic memory basic,
         NFTMetadataDetails memory details,
         NFTMetadataStatus memory status
-    ) public onlyOwner returns (uint256) {
+    ) public returns (uint256) {
         _tokenIds++;
         uint256 newTokenId = _tokenIds;
         
